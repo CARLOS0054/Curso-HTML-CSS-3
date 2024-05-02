@@ -1,0 +1,163 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            h1{
+                text-shadow: 1px 1px 0px black;
+                text-align: center;
+                box-shadow: 10px;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: larger;
+                text-shadow: 0.5px 0.5px 0px black;
+            
+            }
+            table{
+                width: 500px;
+                height: 100px;
+                border-collapse:collapse;
+            
+            }
+            td,th{
+                border: 1px solid black;
+                padding: 8px;
+            }
+            thead,tfoot{
+                background-color: gray;
+                color:white;
+            }
+            td.numero{
+                text-align: right;
+                color: blue;
+                text-decoration: underline black;
+            }
+           
+        
+
+        </style>
+    </head>
+    <body>
+
+        <h1>
+         Tabela dos Top 10 Estados Mais Povoados
+        </h1>
+        <!--
+            Anatomia de tabelas grandes
+                head
+                    Tr, Td, Th
+                tbody
+                    Tr, Td, Th
+                tfoot
+                    Tr, Td, Th
+        -->
+        <table>
+            <thead>
+                <th>Estados</th>
+                <th>População</th>
+            
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        São paulo
+                    </td>
+                    <td class="numero">
+                        45.334.320
+                    </td>
+                </tr>
+                <tr>   
+                    <td>
+                        Minas Gerais
+                    </td>
+                    <td class="numero">
+                        20 538 718
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rio de Janeiro
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bahia
+                    </td>
+                    <td class="numero">
+                        14 141 626
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Paraná
+                    </td>
+                    <td class="numero">
+                        11 444 380
+                </tr>
+                <tr>
+                    <td>
+                        Rio Grande do Sul
+                    </td>
+                    <td class="numero">
+                        10 882 965
+                    </td>
+                    <tr>
+                        <td>
+                            Pernambuco
+                        </td>
+                        <td class="numero">
+                            9 058 931
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ceará
+                        </td>
+                        <td class="numero">
+                            8 794 957
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pará 
+                        </td>
+                        <td class="numero">
+                            8 121 025
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Santa Catarina
+                        </td>
+                        <td class="numero">
+                            7 610 361
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Goiás
+                        </td>
+                        <td class="numero">
+                            7 056 495
+                        </td>
+                    </tr>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <td><strong>TOTAL DA POPULAÇÃO</strong></td>
+                <td class="numero"><strong>159.038.302</strong></td>
+            </tfoot>
+        </table>
+
+        
+    </body>
+    </html>
