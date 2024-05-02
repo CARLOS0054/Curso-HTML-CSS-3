@@ -16,7 +16,8 @@ html, body{
     font-family: var(--font1);
 }
 header{
-    background-color: black;
+    
+    text-shadow: 1px 1px 0px black;
     color: white;
     text-align: center;
     font-family: var(--font2);
@@ -30,6 +31,11 @@ header>h1{
 }
 header>p{
     padding-bottom: 50px;
+}
+header.cordel, footer.cordel{
+    background-image: url('../imagens/cordel.003.jpg');
+
+    background-attachment: fixed;
 }
 a{
     color: white;
@@ -47,8 +53,12 @@ section{
     font-family: var(--font3);
     font-size: 4.5vh;
 }
+section >p{
+    padding-bottom: 2em;
+}
 section.normal{
-    background-color: white;
+    padding: 5px;
+  background-color: whitesmoke;
     color: black;
 }
 section.imagem{
@@ -56,17 +66,33 @@ section.imagem{
     padding: 5px;
     background-color: rgb(46, 41, 41);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+
 
 }
 section.imagem>p{
     display: inline-block;
-    background-color: darkslategray;
+    background-color: rgba(47, 79, 79, 0.527);
+    text-shadow: 1.5px 1.5px 0px black;
 }
 footer{
+    text-shadow: 1px 1px 0px black;
     background-color: black;
     text-align: center;
     padding:50px;
     color:white;
+}
+section#img01{
+    
+    background-image:url('../imagens/background001.jpg') ;
+    background-position: right center;
+    
 
-
+}
+section#img02{
+    background-image:url('../imagens/background002.jpg') ;
+    background-position: right center;
+    
 }
